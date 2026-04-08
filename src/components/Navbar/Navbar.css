@@ -1,0 +1,128 @@
+.navbar-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding-top: 12px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 14px 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(127, 163, 255, 0.26);
+  background: rgba(10, 19, 44, 0.56);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 35px rgba(0, 8, 30, 0.35);
+}
+
+.navbar-brand {
+  font-size: 0.95rem;
+  letter-spacing: 0.11em;
+  font-weight: 700;
+  color: #f1f4ff;
+  white-space: nowrap;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: #c6d2f7;
+  transition: all 0.3s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a.is-active {
+  color: #ffffff;
+  background: linear-gradient(120deg, rgba(47, 117, 255, 0.28), rgba(111, 80, 255, 0.36));
+  box-shadow: 0 0 22px rgba(47, 117, 255, 0.35);
+}
+
+.navbar-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(127, 163, 255, 0.42);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+  padding: 8px;
+}
+
+.navbar-toggle span {
+  display: block;
+  height: 2px;
+  margin: 5px 0;
+  background: #e3ebff;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-toggle.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    border-radius: 14px;
+    border: 1px solid rgba(127, 163, 255, 0.22);
+    background: rgba(10, 19, 44, 0.94);
+    backdrop-filter: blur(16px);
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-links.active {
+    transform: scaleY(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .navbar-links li {
+    width: 100%;
+  }
+
+  .navbar-links a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

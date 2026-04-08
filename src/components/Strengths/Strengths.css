@@ -1,0 +1,48 @@
+.strengths {
+  scroll-margin-top: 90px;
+}
+
+.strength-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.strength-card {
+  border-radius: 18px;
+  border: 1px solid rgba(127, 163, 255, 0.2);
+  background: var(--surface-card);
+  box-shadow: var(--shadow-soft);
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.strength-icon {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  font-size: 1.3rem;
+  color: #90d9ff;
+  background: rgba(47, 117, 255, 0.18);
+}
+
+.strength-card h3 {
+  margin: 14px 0 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .strength-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .strength-grid {
+    grid-template-columns: 1fr;
+  }
+}

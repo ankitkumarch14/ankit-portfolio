@@ -1,0 +1,103 @@
+:root {
+  --bg-main: #080b1c;
+  --bg-soft: #111630;
+  --text-primary: #eff4ff;
+  --text-secondary: #b4bfd8;
+  --brand-blue: #2f75ff;
+  --brand-purple: #6f50ff;
+  --brand-cyan: #00d4ff;
+  --surface-glass: rgba(13, 22, 51, 0.58);
+  --surface-card: rgba(15, 25, 58, 0.76);
+  --surface-border: rgba(127, 163, 255, 0.24);
+  --shadow-soft: 0 16px 45px rgba(0, 8, 30, 0.45);
+  --section-space: 120px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-primary);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(47, 117, 255, 0.26), transparent 45%),
+    radial-gradient(circle at 80% 12%, rgba(111, 80, 255, 0.25), transparent 42%),
+    radial-gradient(circle at 50% 85%, rgba(0, 212, 255, 0.2), transparent 40%),
+    var(--bg-main);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  width: min(1240px, 100% - 32px);
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-space);
+  padding: 28px 0 100px;
+}
+
+.section-tag {
+  display: inline-block;
+  padding: 8px 14px;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  background: rgba(47, 117, 255, 0.14);
+  border: 1px solid rgba(127, 163, 255, 0.34);
+  color: #bfd2ff;
+}
+
+.section-heading {
+  font-size: clamp(1.9rem, 2.6vw, 2.8rem);
+  margin: 16px 0 12px;
+}
+
+.section-lead {
+  max-width: 760px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --section-space: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-space: 88px;
+  }
+
+  .app-shell {
+    width: min(1240px, 100% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --section-space: 72px;
+  }
+
+  main {
+    padding-bottom: 72px;
+  }
+}
