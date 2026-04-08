@@ -1,16 +1,100 @@
-# React + Vite
+# 🌐 Ankit Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website built using **React + Vite**. This project showcases skills, projects, certifications, and contact details in a clean UI.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:**
+https://ankitkumarch14.github.io/ankit-portfolio/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* ⚡ Fast performance using Vite
+* 📱 Fully responsive design
+* 🎨 Modern UI/UX
+* 🧩 Component-based architecture
+* 📂 Sections:
 
-## Expanding the ESLint configuration
+  * Hero
+  * About
+  * Skills
+  * Projects
+  * Certifications
+  * Contact
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React, JavaScript
+* **Build Tool:** Vite
+* **Styling:** CSS
+* **Deployment:** GitHub Pages
+
+---
+
+## 📦 Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ankitkumarch14/ankit-portfolio.git
+cd ankit-portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run locally:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🚀 Deployment (GitHub Pages)
+
+To deploy the project:
+
+```bash
+npm run deploy
+```
+
+Make sure:
+
+* `vite.config.js` has:
+
+  ```js
+  base: '/ankit-portfolio/'
+  ```
+* `package.json` includes:
+
+  ```json
+  "homepage": "https://ankitkumarch14.github.io/ankit-portfolio"
+  ```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork the repo and submit a pull request.
+
+---
+
+## 📬 Contact
+
+For any queries or collaboration:
+
+* 📧 Email: [ankitkumarch14@gmail.com](mailto:ankitkumarch14@gmail.com)
+* 🌐 GitHub: https://github.com/ankitkumarch14
+
+---
+
+## ⭐ Support
+
+If you like this project, please ⭐ the repository!
